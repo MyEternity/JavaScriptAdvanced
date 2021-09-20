@@ -10,7 +10,8 @@ const renderGoodsItem = (title, price) => {
 };
 
 const renderGoodsList = (list) => {
-    document.querySelector('goods-list').innerHTML = list.map(item => renderGoodsItem(item.title, item.price));
+    document.querySelector('.goods-list').innerHTML = list.map(item => renderGoodsItem(item.title, item.price));
 }
 
-renderGoodsList(goods);
+document.querySelector('.goods-list').innerHTML = "<p>Test</p>"
+// renderGoodsList(goods);
