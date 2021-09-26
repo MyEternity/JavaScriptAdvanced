@@ -4,6 +4,7 @@ class GoodItem {
         this.price = price;
         this.img = img;
     }
+
     render() {
         return `<div class="goods-item">
                 <div class="goods-info">
@@ -20,12 +21,13 @@ class GoodsList {
     constructor() {
         this.goods = [];
     }
+
     fetchGoods() {
         this.goods = [{
-                title: 'Рубашка',
-                price: 2150,
-                img: "img/shirt.jpg"
-            },
+            title: 'Рубашка',
+            price: 2150,
+            img: "img/shirt.jpg"
+        },
             {
                 title: 'Носки',
                 price: 150,
@@ -48,6 +50,7 @@ class GoodsList {
             }
         ]
     }
+
     render() {
         let listHtml = '';
         this.goods.forEach((good) => {
@@ -56,10 +59,11 @@ class GoodsList {
         })
         document.querySelector('.goods-list').innerHTML = listHtml;
     }
+
     calcAllGoods() {
         let totalPrice = 0;
         this.goods.forEach((good) => {
-            if(good.price !== undefined) {
+            if (good.price !== undefined) {
                 totalPrice += good.price;
                 console.log(good.price);
             }
@@ -76,29 +80,37 @@ class BasketItem {
         this.img = img;
         this.link = link; // Вероятно, ссылка на страницу товара
     }
+
     render() {
 
     }
 }
+
 class Basket {
     constructor() {
         this.addGoods = [];
         this.deletedGoods = [];
     }
+
     // Удаление товара из корзины (привязываем на нажатие кнопки)
-    deleteFromBasket() {}
+    deleteFromBasket() {
+    }
 
     // Считаем стоимость и количество товаров в корзине
-    calcBasket() {}
+    calcBasket() {
+    }
 
     // Метод, который определяет, добавлены ли в корзину какие-либо товары и при их наличии активирует кнопку "Оформить заказ"
-    isOrder() {}
+    isOrder() {
+    }
 
     // Рендер динамического содержимого корзины
-    render() {}
+    render() {
+    }
 
     // Метод открывания корзины
-    openBasket() {}
+    openBasket() {
+    }
 }
 
 const list = new GoodsList();
