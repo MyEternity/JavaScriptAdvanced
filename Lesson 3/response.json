@@ -1,0 +1,32 @@
+[
+	{
+		"id": "1003",
+		"title": "Рубашка",
+		"price": 2150,
+		"img": "img/shirt.jpg"
+	},
+	{
+		"id": "1004",
+		"title": "Носки",
+		"price": 150,
+		"img": "img/socks.jpg"
+	},
+	{
+		"id": "1005",
+		"title": "Пиджак",
+		"price": 3500,
+		"img": "img/jacket.jpg"
+	},
+	{
+		"id": "1006",
+		"title": "Туфли",
+		"price": 2500,
+		"img": "img/shoes.jpg"
+	},
+	{
+		"id": "1007",
+		"title": "Часы",
+		"price": 17600,
+		"img": "img/watches.jpg"
+	}
+]
